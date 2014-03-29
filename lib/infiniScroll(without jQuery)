@@ -50,8 +50,9 @@
       $target.addEventListener("scroll",self.watchScroll);
     };
 
-    self.enableFetch = function() {
-      fetchOn = true;
+    self.setPage = function(num) {
+      if (!num) return;
+      page = num;
     };
 
     self.disableFetch = function() {
